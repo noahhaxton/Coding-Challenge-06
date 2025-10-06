@@ -42,3 +42,16 @@ class Company {
     this.employees.forEach(emp => console.log(emp.describe()));
   }
 }
+
+// ----- Step 4 & Step 6: Instantiate Employees, Manager, and Company -----
+const emp1 = new Employee("Ava Reed", "Finance");
+const emp2 = new Employee("Liam Torres", "Operations");
+const mgr1 = new Manager("Zoe Patel", "Engineering", 7);
+
+const company = new Company();
+company.addEmployee(emp1);
+company.addEmployee(emp2);
+company.addEmployee(mgr1);
+
+// display all employees
+company.listEmployees();
