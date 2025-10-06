@@ -27,3 +27,18 @@ class Manager extends Employee {
   }
 }
 
+// ----- Step 5: Create the Company class -----
+class Company {
+  constructor() {
+    this.employees = [];
+  }
+
+  addEmployee(employee) {
+    this.employees.push(employee);
+  }
+
+  listEmployees() {
+    console.log("=== Company Employees ===");
+    this.employees.forEach(emp => console.log(emp.describe()));
+  }
+}
